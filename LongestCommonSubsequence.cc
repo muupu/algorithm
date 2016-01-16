@@ -2,7 +2,7 @@
 #include <string>  
 #include <iostream> 
 
-namespace algorithm {
+namespace Algorithm {
 
 	template <typename T>
 	void LongestCommonSubsequence(const T& s1, const T& s2, T& s3)  
@@ -59,14 +59,14 @@ namespace algorithm {
 	    }  
 
 	}
+}
 
-	int main()
-	{
-		std::string s1("ABCBDAB");  
-	    std::string s2("BDCABA");  
-	    std::string s3;
-	    LongestCommonSubsequence(s1, s2, s3);  
-	    std::cout<< s3 <<std::endl; 
-		return 0;
-	}
+int main()
+{
+	std::string s1("ABCBDAB");  
+    std::string s2("BDCABA");  
+    std::string s3;
+    Algorithm::LongestCommonSubsequence(s1, s2, s3);  
+    std::cout<< s3 <<std::endl; 
+	return 0;
 }
